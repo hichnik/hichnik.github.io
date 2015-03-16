@@ -1,3 +1,12 @@
-p {
-	color: red;
+.halfgray {
+	background: url('../images/bg-trans.png');
+}
+
+header, section,footer {
+    float: left;
+    width: 100%;
+    clear: both
+	
+	padding: 0 20px;
+
 }
