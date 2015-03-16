@@ -13,7 +13,7 @@
 .grid .unit {
     float: left;
     width: 100%;
-    padding: 10px
+    padding-right: 10px
 }
 
 .grid .unit:first-child {
