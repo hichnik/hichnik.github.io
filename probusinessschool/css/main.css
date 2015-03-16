@@ -1,3 +1,89 @@
-p {
-	color: red;
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
 }
+
+.halfgray {
+	background: url('../images/bg-trans.png');
+}
+
+img.toplogo {
+	margin-top: 25px;
+}
+
+
+#evftr {
+    /*margin-top: 0px; */
+    float: right;
+    /* margin-right: 0px; */
+    }
+
+.evftr-info {
+    float: right;
+    background: #fff;
+    margin: 15px 0px 10px 20px; 
+
+    }
+
+.evftr-info:last-child {
+    margin-left: 0px;
+}
+
+.evftr-date {
+    text-align: center;
+    padding: 10px;
+    float: right;
+    width: 120px;
+    color: #000;
+    height: 100px;
+    border-bottom: 3px solid #bbb;
+	overflow: hidden;
+
+	font-size: 14px;
+	line-height: 20px;
+    }
+
+    
+.evftr-date:hover {
+    border-bottom:3px solid #fdb813;
+}
+
+
+.evftr-dm {
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    }
+
+.evftr-week {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+	
+	color: #fdb813;
+    }
+
+header, section,footer {
+    float: left;
+    width: 100%;
+    clear: both;
+	
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+@media screen and (max-width: 568px) {
+	header, section,footer {    
+		padding: 0px;
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+	/* TODO */
+}
+
+
+
