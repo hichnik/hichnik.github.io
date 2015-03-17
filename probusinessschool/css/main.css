@@ -84,6 +84,10 @@ section#menu {
 	margin-top: 10px;
 }
 
+section#slider {
+	margin-top: 10px;
+}
+
 
 #wizemenu > ul > li:hover > a,
 #search-button,
@@ -107,6 +111,7 @@ position: absolute;
 .main-navigation {
 	margin: 10px 0px;
 }
+
 
 .show-on-mobiles {
     display: none
@@ -143,6 +148,13 @@ position: absolute;
 
 }
 
+.wholeimage {
+	background: #fff;
+	padding: 20px;
+	margin: 20px 0px;
+}
+
+
 @media screen and (max-width: 568px) {
 	header, section,footer {    
 		padding: 0px;
@@ -171,7 +183,19 @@ position: absolute;
 		margin-top: 0px;
 	}
 
+	section#slider {
+		margin-top: 0px;
+	}
+
 	#wizemenu > ul > li > a {
 		padding: 5px 10px 1px 10px;	
 	}
+
+
+	.wholeimage {
+		padding: 5px;
+	}
+
+	
 }
+
