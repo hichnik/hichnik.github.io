@@ -6,6 +6,10 @@ body, h1, h2, h3, h4, h5, h6 {
 	background: url('../images/bg-trans.png');
 }
 
+.fourfifthgray {
+	background: url('../images/menu-footer.png');
+}
+
 img.toplogo {
 	margin-top: 25px;
 }
@@ -42,7 +46,7 @@ img.toplogo {
 	line-height: 20px;
     }
 
-    
+
 .evftr-date:hover {
     border-bottom:3px solid #fdb813;
 }
