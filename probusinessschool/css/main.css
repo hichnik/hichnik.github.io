@@ -77,17 +77,101 @@ header, section,footer {
 	padding: 0 20px;
 }
 
+
+
+section#menu {
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+
+#wizemenu > ul > li:hover > a,
+#search-button,
+#wp-calendar tbody td:hover,
+#wizemenu > ul > li > a:active,
+#wizemenu > ul ul li a:hover {
+    background:#fdb813;
+}
+
+#wizemenu &gt; ul ul {
+visibility: hidden;
+top: 50px;
+margin: 0px;
+padding: 0;
+opacity: 0;
+z-index: 1000;
+position: absolute;
+}
+
+
+.main-navigation {
+	margin: 10px 0px;
+}
+
+.show-on-mobiles {
+    display: none
+}
+
 @media screen and (max-width: 568px) {
-	header, section,footer {    
-		padding: 0px;
-	}
+    .show-on-mobiles {
+        display:block !important
+    }
 
+    a .show-on-mobiles {
+        display: inline !important
+    }
 
+    .hide-on-mobiles {
+    	display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
 	/* TODO */
+	.evftr-info {
+		width: 100% !important;
+	}
+
+	.evftr-date {
+		box-sizing: border-box;
+		width: 100% !important;
+	}
+
+	.evftr-info:last-child {
+			display: none;
+	}
+
 }
 
+@media screen and (max-width: 568px) {
+	header, section,footer {    
+		padding: 0px;
+	}
+	
+	img.toplogo {
+		margin: 20px 0px;
+	}
 
+	/* TODO - floating sizes */
 
+	.evftr-info {
+		display: none;
+	}
+
+	.evftr-info:first-child {
+		display: block;
+	}
+
+	.main-navigation {
+		margin: 0px;
+	}
+
+	section#menu {
+		box-sizing: border-box; 
+		margin-top: 0px;
+	}
+
+	#wizemenu > ul > li > a {
+		padding: 5px 10px 1px 10px;	
+	}
+}
