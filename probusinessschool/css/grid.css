@@ -103,7 +103,7 @@
 }
 
 .grid {
-    *zoom:1}
+    *zoom:0.25}
 
 .grid:before,.grid:after {
     display: table;
