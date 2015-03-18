@@ -13,7 +13,7 @@
 .grid .unit {
     float: left;
     width: 100%;
-    padding-right: 10px
+    /*padding-right: 10px */
 }
 
 .grid .unit:first-child {
@@ -88,6 +88,14 @@
 
 .grid .three-fifths,.grid .w-3-5 {
     width: 60%
+}
+
+.grid .seventy, .grid .w-0-7 {
+    width: 70%;
+}
+
+.grid .thirty, .grid .w-0-3 {
+    width: 30%;
 }
 
 .grid .four-fifths,.grid .w-4-5 {
