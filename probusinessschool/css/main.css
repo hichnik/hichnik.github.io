@@ -85,7 +85,7 @@ section#menu {
 }
 
 section#slider {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 
@@ -154,6 +154,16 @@ position: absolute;
 	margin: 20px 0px;
 }
 
+div.about_us {
+	
+	border-top: solid 2px #efefef;
+	border-bottom: solid 2px #efefef;
+	border-left: solid 1px #efefef;
+	border-right: solid 1px #efefef;
+
+	padding: 15px;
+	background: #fff;
+}
 
 @media screen and (max-width: 568px) {
 	header, section,footer {    
@@ -197,5 +207,127 @@ position: absolute;
 	}
 
 	
+	div.about_us {
+		padding: 5px;
+	}	
+	
 }
 
+.title-home h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24px;
+	color:#fff;
+	padding:5px 0px 5px 0px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+    float:left;
+	line-height:34px;
+}
+
+
+
+
+ul{
+ padding: 0;
+ text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ul ul{
+ margin: 0 0 0 2em; /* Добавляем левый отступ для вложенных списков */
+}
+
+.reul-list li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;	
+
+	font-size: 14px;
+	line-height: 20px;
+}
+ 
+.reul-list li:hover {
+    background: #eee;
+}	
+ 
+.reul-list li:before {
+    content: "✔";
+    position: absolute;	
+    left: -2.5em;
+    top: 1em;
+    margin-top: -1em;
+    background: #fdb813;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.reul-list li:after {
+    position: absolute;	
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 1em;
+    margin-top: -.5em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;				
+}
+ 
+.reul-list li:hover:after {
+    left: -.5em;
+    border-left-color: #fdb813;				
+}
+
+h3 {
+  
+  	font-size: 24px;
+
+  	margin-top: 0px;
+  	margin-bottom: 10px;
+  	font-weight: 600;
+  	line-height: 1.25;
+  	word-wrap: break-word;
+
+  	color: #fdb813;
+}
+
+.bar_hr {
+
+	display: block;
+  	border-bottom: 1px dashed #333;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+
+
+.button-link {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.button-link a {
+	padding: 6px 8px 6px 8px;
+	color: #fff;
+	background: #fdb813;
+
+	text-decoration: none !important;
+  	cursor: pointer !important;
+}
+.button-link a:hover {
+	background: #333; 
+}
