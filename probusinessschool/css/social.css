@@ -1,0 +1,116 @@
+ul#footer-social  {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+
+
+    text-shadow: none;
+}
+
+ul#footer-social li {
+    float: left;
+    list-style: none;
+}
+
+ul#footer-social li a {
+    display: block;
+    width: 39px;
+    height: 39px;
+    
+    float:left;
+    margin: 8px 5px;
+}
+
+ul#footer-social li a:first-child {
+    margin-left: 0px;
+}
+
+ul#footer-social li a:last-child {
+    margin-right: 0px;
+}
+/*#footer-social {
+    float: right;
+}
+
+#footer-social ul {
+    margin: 0px;
+}
+
+#footer-social ul > li {
+    list-style: none;
+    float: right;
+}
+
+#footer-social li a {
+    list-style: none;
+    float: right;
+    width: 39px;
+    height: 39px;
+
+}
+*/
+/*#footer-social {
+    margin-bottom: -9px;
+    float: right;
+    color: #fff;
+	margin-top:-2px;
+    }
+
+
+    #footer-social li {
+    list-style: none;
+    float: left;
+    }
+
+#footer-social li a {
+    list-style: none;
+    text-aling: center;
+    float: left;
+    width: 39px;
+    height: 39px;
+    margin: 0px 0px 30px 5px;
+    }
+*/	
+#footer-social li.facebook a {
+    background: url("../images/facebook.png") no-repeat left 
+    }
+
+#footer-social li.facebook a:hover { 
+    background: #3b5998 url("../images/facebook.png") no-repeat left 
+    }
+
+#footer-social li.youtube a {
+    background: url("../images/youtube.png") no-repeat left 
+    }
+
+#footer-social li.youtube a:hover {
+    background: #ff3132 url("../images/youtube.png") no-repeat left 
+    }
+
+#footer-social li.twitter a {
+    background: url("../images/twitter.png") no-repeat left 
+    }
+
+#footer-social li.twitter a:hover {
+    background: #2daae1 url("../images/twitter.png") no-repeat left 
+    }
+
+#footer-social li.vk a {
+    background: url("../images/vk.png") no-repeat left 
+    }
+
+#footer-social li.vk a:hover {
+    background: #476a91 url("../images/vk.png") no-repeat left 
+    }
+	
+#footer-social li.google a {
+    background: url("../images/google.png") no-repeat left 
+    }
+
+#footer-social li.google a:hover {
+    background: #dc4937 url("../images/google.png") no-repeat left 
+    }
+	
+
+	
+	

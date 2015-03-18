@@ -1,0 +1,153 @@
+#wizemenu { 
+    zoom: 1; 
+    }
+
+#wizemenu > ul ul
+ {
+    transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    }
+
+#wizemenu > ul {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    }
+
+#wizemenu > ul li {
+    background:url();
+    list-style: none;
+    margin-right: 5px;
+    padding: 0;
+    }
+
+#wizemenu:before, #wizemenu:after, #wizemenu > ul:before, #wizemenu > ul:after {
+    display: table;
+    content: '';
+    }
+
+#wizemenu:after, #wizemenu > ul:after {
+    clear: both;
+    }
+
+#wizemenu > ul > li {
+    float: left;
+    position: relative;
+    }
+
+#wizemenu > ul > li > a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 15px 1px 15px;
+    font-size: 14px;
+    border-radius:0px;
+	font-weight:400;
+	height:28px;
+	line-height:20px;
+	border-radius:0px;
+    }
+		
+#wizemenu > ul > li.active > a  { 
+    background:#fff;
+    color: #1b1b1b;	
+	}
+	
+#wizemenu > ul > li:hover > a { 
+    color: #fff;	
+	margin-top:0px;
+    }
+
+#wizemenu > ul > li > a > span { 
+    line-height: 18px;
+    }
+
+#wizemenu > ul > li.active > a, #wizemenu > ul > li > a:active {
+
+    }
+
+
+/* --- menu childs --- */
+
+#wizemenu > ul ul {
+    visibility: hidden;
+    top: 50px;
+    margin: 0px;
+    padding: 0;
+    opacity: 0;
+    z-index: 1000;
+    position: absolute;
+    }
+
+#wizemenu > ul ul:before {
+    background: transparent;
+    top: -10px;
+    width: 100%;
+    height: 20px;
+    content: '';
+    position: absolute;
+    }
+
+#wizemenu > ul ul li {
+    list-style: none;
+    /*width: 180px;*/
+    width: 255px;
+    padding: 0;
+	background:url("../images/wizemenu.png");
+    }
+
+#wizemenu > ul ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    /*width: 150px;*/
+    width: 225px;
+    color: #fff;
+    display: block;
+    padding: 8px 15px 8px 15px;
+    font-size: 14px;
+    }
+
+
+#wizemenu > ul ul li a:hover { 
+    color: #fff;	
+    }
+
+#wizemenu > ul li:hover ul {
+    visibility: visible;
+    top: 49px;
+    left: 0;
+    color: #000;
+    margin: 0;
+    opacity: 1;
+    z-index: 1000;
+    }
+
+/* --- 3-level menu childs --- */
+
+#wizemenu ul ul > li {
+    position:relative;
+    display:block;
+    }
+
+#wizemenu > ul ul ul li {
+    list-style: none;
+    width: 100%;
+	margin-left:5px;
+	width: 180px;
+    }
+	
+#wizemenu > ul ul li:hover ul {
+    top: 0px;
+    left: 180px;
+    }
+
+#wizemenu > ul li:hover ul ul, #wizemenu > ul li:hover ul ul ul, #wizemenu > ul li.over ul ul, #wizemenu > ul li.over ul ul ul {
+    display:none;
+    }
+	
+#wizemenu > ul li:hover ul, #wizemenu > ul li li:hover ul, #wizemenu > ul li li li:hover ul, #wizemenu > ul li.over ul, #wizemenu > ul li li.over ul, #wizemenu >ul li li li.over ul {
+	display: block;
+    }
