@@ -1,0 +1,230 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"doc",
+				"docjq	HTML w/ jQuery"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: li",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 424.0
+	},
+	"console":
+	{
+		"height": 287.0,
+		"history":
+		[
+			"alert(1)",
+			"?",
+			"git",
+			"pwd",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublimetext.com/2'+pf.replace('','%20')).read()); print('Please restart Sublime Text to finish installation')",
+			"import urllib2,os;"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Projects/hichnik.github.io"
+	],
+	"file_history":
+	[
+		"/E/Projects/hichnik.github.io/probusinessschool/css/grid.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/main.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/social.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/index.html",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/main_jekyllrb.css",
+		"/E/Projects/hichnik.github.io/index.html",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/wizemenu.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/normalize.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/source-css-option.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/source-fonts.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/paddingmargin.css",
+		"/E/Projects/hichnik.github.io/probusinessschool/css/media.css",
+		"/E/Projects/lp/responsivegallery/css/responsivegallery.css",
+		"/E/Projects/lp/responsivegallery/responsivegallery.html",
+		"/E/Projects/lp/css/plugin-style.css",
+		"/E/Projects/lp/css/main.css",
+		"/E/Projects/lp/css/note-makros.css",
+		"/E/Projects/lp/textformfield-validation.html",
+		"/E/Projects/lp/flow-video-src",
+		"/C/Users/Юрий/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/E/st3/st3.sublime-project",
+		"/E/st3/index.html",
+		"/E/st3/css/style.css",
+		"/E/st3/module/module.html",
+		"/E/st3/css2/style.css",
+		"/E/st3/images/1.jpg"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"wiz"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hichnik.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 160.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
