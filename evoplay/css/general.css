@@ -37,13 +37,13 @@ p:after {
 }
 
 p:before {
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
 }
 
 p:after {
-    bottom: 0px;
+    bottom: 0;
     left: 40%;
     width: 20%;
 }
