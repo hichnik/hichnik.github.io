@@ -1,0 +1,102 @@
+    .registration {
+      padding: 0;
+    }
+
+    .button {
+      width: 194px;
+      height: 56px;
+      
+      margin-top: 40px;
+      
+      display: inline-block;
+      position: relative;
+      
+      cursor: pointer;
+    }
+
+    .button-blink:before,
+    .button-blink:after {
+      content: '';
+      position: absolute; 
+      top: 0;
+      left: 0;
+      
+      width: 194px;
+      height: 56px;
+      
+      background: url('../images/button-bg.png') no-repeat;
+    }
+
+    .button-blink:before {
+      background-position: 0 0;
+    }
+
+    .button-blink:after {
+      background-position: 0 -56px;
+      -webkit-animation: registration-animation 2s linear infinite;
+              animation: registration-animation 2s linear infinite;
+    }
+
+    @-webkit-keyframes registration-animation {
+      50% {opacity: 0}
+    }
+
+    @keyframes registration-animation {
+      50% {opacity: 0}
+    }
+
+
+  .button-jquery,
+  .button-blink,
+  .button-text {
+    
+  }
+
+    .button-jquery {
+      width: 194px;
+      height: 56px;
+      
+      margin-top: 0px;
+      
+      display: inline-block;
+      position: relative;
+      
+      background: url('../images/button-bg.png') no-repeat;
+      background-position: 0 0;
+      
+      cursor: pointer;
+    }
+
+    .button-jquery-blink {
+      content: '';
+      position: absolute; 
+      top: 0;
+      left: 0;
+      
+      width: 194px;
+      height: 56px;
+      
+      background: url('../images/button-bg.png') no-repeat;
+      background-position: 0 -56px;
+    }
+
+    .button-text {
+      position: absolute; 
+      top: 0;
+      left: 0;
+      
+      width: 194px;
+      height: 56px;
+      
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 56px;
+        
+      text-align: center;
+      text-transform: uppercase;
+        
+      color: #fff;
+      text-shadow: 0 2px 2px rgba(2,22,5,.81); 
+      
+    }

@@ -1,0 +1,139 @@
+    /* Pagination */
+      .pagination {
+        display: table;
+        padding: 50px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .paginator {
+
+        display: inline-block;
+        height: 30px;
+        border-radius: 15px;
+        padding: 0;
+        
+        
+        background: url('../images/pagination-pattern2.png');
+        background-clip: padding-box; /* prevents bg color from leaking outside the border */
+        box-shadow: 0 2px 0 rgba(3,4,4,.5);
+
+      }
+
+      .paginator .item {
+        
+        width: 28px;
+        height: 30px;
+        
+        padding: 0px;
+        float: left;
+                
+        background: url('../images/sprite.png') 2px 3px no-repeat;        
+
+        position: relative;
+        cursor: pointer;        
+      }
+
+      .paginator .item:first-child {
+        margin-left: 2px;
+      }
+      
+      .paginator .item:last-child {
+        margin-right: 2px;
+      }
+
+      .paginator .item.active {
+        /*background-image: url('images/green-marker2.png');*/
+        background: url('../images/sprite.png') -38px 3px no-repeat;        
+      }
+
+      .paginator .page {
+        background: url('../images/sprite.png') no-repeat;        
+        width: 20px;
+        height: 25px;
+
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+
+      .paginator-flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;  
+        -webkit-box-orient: horizontal;  
+        -webkit-box-direction: normal;  
+        -webkit-flex-direction: row;  
+            -ms-flex-direction: row;  
+                flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        height: 30px;
+        
+        margin-top: 20px;
+        padding: 0px 2px;
+
+        background: url('../images/pagination-pattern2.png');
+        background-clip: padding-box;
+        border-radius: 15px;
+        box-shadow: 0 2px 0 rgba(3,4,4,.5);
+      }
+
+      .paginator-flex .item-flex {
+        width: 28px;
+        height: 30px;
+        margin: auto;
+        position: relative;
+        float: left; /* IE8-9 Fix - float */
+        
+        background: url('../images/blue-marker2.png') 2px 2px no-repeat;
+      }
+
+      .paginator-flex .item-flex.active {
+        background: url('../images/green-marker2.png') 2px 2px no-repeat;
+      }
+
+      .paginator-flex .page {
+        background: url('../images/sprite.png') no-repeat;        
+        width: 20px;
+        height: 25px;
+        
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+      
+      .paginator .item-prev,
+      .paginator-flex .item-prev { 
+        background-position: -240px 0; 
+      }
+
+      .paginator .item-next,
+      .paginator-flex .item-next {
+        background-position: -280px 0;
+        left: 9px;
+      }
+
+      .paginator .item-four,
+      .paginator-flex .item-four {
+        background-position: -160px 0;
+      }
+
+      .paginator .item-five,
+      .paginator-flex .item-five {
+        background-position: -120px 0;
+      }
+
+      .paginator .item-six,
+      .paginator-flex .item-six {
+        background-position: -200px 0;
+      }

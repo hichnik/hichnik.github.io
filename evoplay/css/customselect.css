@@ -1,0 +1,188 @@
+.selecter {
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  text-align: center;
+      
+  position: relative;
+  left: -48px;
+  margin-left: 50%;
+  
+}
+
+.selecter:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+.selecter__head {
+  cursor: pointer;
+}    
+
+.selecter__head,
+.selecter__container {
+  box-sizing: border-box;
+      
+  width: 96px;
+  background: url('../images/pagination-pattern.png') repeat;
+  /* gracegul degradation 4 ie8-9 */
+
+  background: -webkit-linear-gradient(rgba(255,255,255,.5) 0%, rgba(0,0,0,0.5) 100%),
+  url('../images/pagination-pattern.png');
+  background: -o-linear-gradient(rgba(255,255,255,.5) 0%, rgba(0,0,0,0.5) 100%),
+  url('../images/pagination-pattern.png');
+  background: ms-linear-gradient(rgba(255,255,255,.5) 0%, rgba(0,0,0,0.5) 100%),
+  url('../images/pagination-pattern.png');
+  background: linear-gradient(rgba(255,255,255,.5) 0%, rgba(0,0,0,0.5) 100%),
+  url('../images/pagination-pattern.png');
+  /* modern browsers (Autoprefixer version) */  
+
+        
+  background-clip: padding-box;
+  border-radius: 5px;
+  padding: 3px;
+        
+  box-shadow: 0 2px 0 rgba(3,4,4,.5);
+  
+  position: absolute;
+  top: 50px; /* padding of selecter */
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected__text {
+  
+  display: block;
+  height: 32px;
+
+  font-family: "Times New Roman";
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+
+  text-align: left;
+  padding-left: 10px;
+
+  border-radius: 3px;      
+  position: relative;
+
+  color: #273141; 
+  background-color: #040c19;
+  
+}
+
+.selected__text:after {
+  content: '';
+  width: 13px; 
+  height: 10px;
+     
+  position: absolute;
+  right: 8px;
+  top: 13px;
+      
+  background: url('../images/sprite.png') -80px 0 no-repeat;
+      
+}
+
+.options__container {
+  background: #fff;
+  position: relative;
+  border-radius: 3px;
+  background-color: #040c19;
+  
+  height: 200px; /* should be changed dynamically*/
+  overflow: hidden;
+}
+
+.options__container .option {
+  
+  font-family: "Arial";
+  font-size: 18px;
+  line-height: 28px;
+  vertical-align: baseline;
+  
+  text-align: left;
+  padding-left: 10px;
+
+  border-left: solid 2px #040c19;
+  border-right: solid 2px #040c19;
+  color: #bacbe6; 
+  
+  cursor: pointer;
+}
+
+.options__container .option:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+} 
+
+.options__container .option:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+}
+
+.options__container .option:hover {
+  background-color: #0e1825;
+  position: relative;
+  z-index: 10;
+}
+
+.options__container .select__scroll {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  bottom: 7px;
+  width: 15px;
+}
+
+.options__container .select__scroll .scroll__drag {
+  width: 8px;
+  height: 80px;
+  
+  background: -webkit-linear-gradient(top, #436a8e 0%, #2c324a 100%), #436a8e;
+  background: -o-linear-gradient(top, #436a8e 0%, #2c324a 100%), #436a8e;
+  background: ms-gradient(top, #436a8e 0%, #2c324a 100%), #436a8e;
+  background: linear-gradient(top, #436a8e 0%, #2c324a 100%), #436a8e;
+  
+  border-radius: 3px;    
+}
+
+.ps-container {
+  overflow: hidden !important; 
+}
+
+.ps-container > .ps-scrollbar-y-rail {
+
+  position: absolute;
+  right: 0;
+  width: 15px;
+  margin: 7px 0px;
+
+ }
+
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y { 
+  position: absolute;
+  width: 8px;
+  
+  background: #436a8e;
+  background: -webkit-linear-gradient(#436a8e 0%, #2c324a 100%), #436a8e;
+  background: -o-linear-gradient(#436a8e 0%, #2c324a 100%), #436a8e;
+  background: ms-gradient(top, #436a8e 0%, #2c324a 100%), #436a8e;
+  background: linear-gradient(#436a8e 0%, #2c324a 100%), #436a8e;
+
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+  border-radius: 3px;
+  
+  z-index: 500;
+}
+    

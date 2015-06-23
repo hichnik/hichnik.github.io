@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Тестовое задание для EVOPLAY</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/paginator.css">
+    <link rel="stylesheet" href="css/customselect.css">
+    <link rel="stylesheet" href="css/buttons.css">
+  
+  <!-- Gradient in IE9+ svg
+  more info at http://cssmatik.com -->
+  <!--[if gte IE 9]
+  <style type="text/css">
+    .gradient {
+      filter: none;
+  }
+  </style>
+  <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper">
+  <h1 class="h1">Evoplay &#151; Тестовое задание</h1>
+     
+  <p>Cверстать пейджинатор, который будет всегда размещен по центру страницы, независимо от количества элементов в нем. Нужно как минимум 2 варианта, один из них флоатами (HTML,  CSS), другой на ваше усмотрение.</p>
+     <div class="pagination">
+       
+        <div class="paginator">
+         <div class="item"><div class="page item-prev"></div></div>
+         <div class="item"><div class="page item-four"></div></div>
+         <div class="item active"><div class="page item-five"></div></div>
+         <div class="item"><div class="page item-six"></div></div>
+         <div class="item"><div class="page item-next"></div></div>
+       </div>
+
+       <div class="paginator-flex">
+         <div class="item-flex"><div class="page item-prev"></div></div>
+         <div class="item-flex"><div class="page item-four"></div></div>
+         <div class="item-flex active"><div class="page item-five"></div></div>
+         <div class="item-flex"><div class="page item-six"></div></div>
+         <div class="item-flex"><div class="page item-next"></div></div>
+       </div>
+
+
+     </div>
+
+<p>Реализовать кастомный селект с внутренним кастомным скроллом (HTML, CSS, JS, jquery)</p>
+<div class="selecter">
+
+  <div class="selecter__head">
+    <div class="selected__text">ГГГГ</div>
+  </div> 
+
+  <div class="selecter__container hidden">
+  <!-- todo: add class hidden here -->
+    <div class="options__container" id="options__container">
+    
+      <div class="option">2015</div>
+      <div class="option">2014</div>
+      <div class="option">2013</div>
+      <div class="option">2012</div>
+      <div class="option">2011</div>
+      <div class="option">2010</div>
+      <div class="option">2009</div>
+      <div class="option">2008</div>
+      <div class="option">2007</div>
+      <div class="option">2006</div>
+      <div class="option">2005</div>
+      <div class="option">2004</div>
+      <div class="option">2003</div>
+      <div class="option">2002</div>
+  
+<!--  
+      <div class="select__scroll">
+        <div class="scroll__drag"></div>
+      </div>
+ -->    
+    </div>
+  </div>
+
+</div>
+
+<p>3. сделать мигающей, не состояние :hover, а именно мигающую кнопку (в макете два состояния – темнее и светлее). Двумя способами - с помощью jquery и css3</p>
+<div class="registration">
+  <div class="button">
+    <div class="button button-blink"></div>
+    <div class="button button-text">Регистрация</div>
+  </div>
+  <div class="button-jquery">
+    <div class="button-jquery-blink"></div>
+    <div class="button-text">Регистрация</div>
+  </div>
+</div> 
+
+<!-- .end wrapper -->
+</div>
+  
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="libs/perfect-scrollbar.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function(){
+    
+      function initSelect(){
+        $('.options__container .option').each(function(i, item){
+          $(item).on('click', function(){
+             $('.selected__text').text( this.innerText )
+          })
+        })
+        Ps.initialize(document.getElementById('options__container'));
+      }
+
+      (function animateButton() {
+
+        $('.button-jquery-blink')        
+          .animate({'opacity' : 0}, 'slow')
+          .animate({'opacity' : 1}, 'slow','linear', animateButton)
+
+      })()
+
+
+      $('.selecter__head').on('click', function(e){
+
+        var $selecterContainer = $('.selecter__container');
+
+        function closeSelect() {
+          $selecterContainer.toggleClass('hidden')
+          $(window).unbind('click',closeSelect)
+        }
+        
+        if ($selecterContainer.hasClass('hidden')) {
+           e.stopPropagation()
+
+           $selecterContainer.toggleClass('hidden')
+           $(window).bind('click',closeSelect)
+           Ps.update(document.getElementById('options__container'))
+        }
+
+        //
+        // http://noraesae.github.io/perfect-scrollbar/
+        // custom scrolbar element
+        //
+        
+      
+      })
+
+      initSelect()
+    })
+  </script>
+  </body>
+</html>
