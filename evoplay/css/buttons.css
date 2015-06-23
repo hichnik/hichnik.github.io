@@ -1,4 +1,4 @@
-    .registration {
+        .registration {
       padding: 0;
     }
 
@@ -33,7 +33,6 @@
 
     .button-blink:after {
       background-position: 0 -56px;
-         -moz-animation: registration-animation 2s linear infinite;
       -webkit-animation: registration-animation 2s linear infinite;
               animation: registration-animation 2s linear infinite;
     }
@@ -50,33 +49,34 @@
   .button-jquery,
   .button-blink,
   .button-text {
-      width: 194px;
-      height: 56px;
     
   }
 
-  .button-jquery,
-  .button-jquery-blink {
-    background: url('../images/button-bg.png') no-repeat;    
-  }
-
-  .button-jquery {
-    margin-top: 0;
+    .button-jquery {
+      width: 194px;
+      height: 56px;
       
-    display: inline-block;
-    position: relative;
+      margin-top: 0px;
       
-
-    background-position: 0 0;
-    cursor: pointer;
-  }
+      display: inline-block;
+      position: relative;
+      
+      background: url('../images/button-bg.png') no-repeat;
+      background-position: 0 0;
+      
+      cursor: pointer;
+    }
 
     .button-jquery-blink {
       content: '';
       position: absolute; 
       top: 0;
       left: 0;
-     
+      
+      width: 194px;
+      height: 56px;
+      
+      background: url('../images/button-bg.png') no-repeat;
       background-position: 0 -56px;
     }
 
@@ -84,6 +84,9 @@
       position: absolute; 
       top: 0;
       left: 0;
+      
+      width: 194px;
+      height: 56px;
       
       font-family: Arial, sans-serif;
       font-size: 18px;
