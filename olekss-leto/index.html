@@ -131,7 +131,7 @@
                   <div class="bus__place free"></div>
                   <div class="bus__place free"></div>
                   <div class="bus__place free"></div>
-                  <div class="bus__place none"></div>
+                  <div class="bus__place free"></div>
                   <div class="bus__place free"></div>
                 </div>
               </div>
@@ -388,25 +388,35 @@
     </div>
   </div>
 
-
-<!--   <header>
-
-    <div class="container">
-      <div class="row">xxx</div>
-    </div>    
-  </header>
-  <main>
-  </main>
-  <footer>
-    
-  </footer>
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script type="text/javascript">
-    jQuery(function(){
+    function updateFreePlaces() {
+      var $freePlaces = $(document).find(".bus__place.free")
+      //console.log( $("#leftplaces").text( $freePlaces.length ) )
+      $("#leftplaces").text( $freePlaces.length )
+    }
+
+    function placeOrder() {
+      var $freePlace = $(document).find(".bus__place.free")
+      $($freePlace[0]).removeClass("free").addClass("ocupped")
+
+      updateFreePlaces()
+    }
+
+    $(document).on('ready', function() {
       
-    });
+      updateFreePlaces()
+      
+      setTimeout(function() { 
+        placeOrder()
+      }, 5000);
+      
+      setTimeout(function() {
+        placeOrder()
+      }, 7000); // wait 2 seconds after first placement
+      
+    })
   </script>
- -->  
-<div class="layout_full"></div>
+<!-- <div class="layout_full"></div> -->
  </body>
 </html>
