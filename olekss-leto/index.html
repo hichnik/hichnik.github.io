@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Поездки в сочи</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Demo project with jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">   -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <header class="container-fluid header header-bg">
+    <div class="row">
+      <div class="container">
+        <div class="row padded">
+          <div class="col-md-12">
+            
+            <div class="logo pull-left"><img src="images/logo.png" alt="Лого"></div>
+          
+            <div class="journeys pull-left">
+              <div class="mike">
+                Путешествия с Михаилом  
+              </div>
+              <div class="ex_sochi">Экскурсии по Сочи и Абхазии</div>
+            </div>
+
+            <div class="order pull-right">
+              <div class="order__phone">+7 (918) 101 70 21</div>
+              <div class="order__button">заказать звонок</div>  
+            </div>
+
+            <nav class="nav pull-right">
+                <ul class="nav__main">
+                  <li class="nav__item"><a href="#desc" class="nav__link">Описание экскурсии</a></li>
+                  <li class="nav__item"><a href="#reg" class="nav__link">Записаться</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
+                  <li class="nav__item"><a href="#whois" class="nav__link">Кто такой Михаил</a></li>
+                </ul>              
+            </nav>
+          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid section1">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+            <div class="jumbotron">
+              <h1 class="h1">ВЕСЬ СОЧИ за 1 ДЕНЬ</h1>
+              <h2 class="h2">Посети 20 самых ярких мест Сочи всего за одну экскурсию по спец. цене 799р.</h2>
+            </div>
+            <div class="register">Запишись на экскурсию</div>
+            <div class="busform">
+              <div class="busform__lefttitle">Осталось</div>
+              <div class="busform__leftcounter">
+                <div class="busform__leftplaces pull-left" id="leftplaces">26</div>
+                <div class="busform__leftm pull-left">Мест из</div>
+                <div class="busform__leftplaces pull-right" id="lefttotal">45</div>
+              </div>
+              <div class="bus">
+                <div class="bus__row">
+                  <div class="bus__place none"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                </div>
+                <div class="bus__row">
+                  <div class="bus__place none"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                </div>
+                <div class="bus__row">
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place free"></div>
+                </div>
+                <div class="bus__row">
+                  <div class="bus__place none"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                </div>
+                <div class="bus__row">
+                  <div class="bus__place driver"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place ocupped"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place free"></div>
+                  <div class="bus__place none"></div>
+                  <div class="bus__place free"></div>
+                </div>
+              </div>
+            </div> 
+
+            
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <div class="container-fluid section2">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+            <div class="promo">
+              <div class="h1 magenta">Что?</div>
+              <div class="h2">Экскурсия <span>&#171;Весь сочи за 1 день&#187;</span></div>
+              <p>это возможность увидеть все основные <span class="spaced">достопримечательности</span> города-курорта в течение одного дня!</p>
+              <p>Всё увидеть своими глазами и лично познакомиться с красотой и разнообразием Сочи.</p>
+            </div>
+            <div class="promo">
+              <div class="h1 magenta">Зачем?</div>
+              <div class="h2">Задача тура <span>&#171;Весь сочи за 1 день&#187;</span></div>
+              <p>cэкономить время вашего отпуска!</p>
+              <p>Оставить у вас незабываемые впечатления и дать возможность сделать яркие фотографии в основных местах, которыми гордится город.</p>
+            </div>
+            <div class="promo">
+              <div class="h1 magenta">Почему сейчас?</div>
+              <div class="h2">Всё очень просто! &#151;<br> это <span>самая низкая цена!</span></div>
+              <p>Мы снизили цену на самую первую для Вас экскурсию, потому что хотим показать вам наше гостеприимство и развеять все ваши сомнения относительно южного сервиса.</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid section3">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <div class="jumbotron">
+                <h1 class="h1">&#171;Весь Cочи за 1 день&#187; &#151; это экскурсия для вас, если:</h1>
+              </div>
+              <div class="promoblock clearfix">
+                <div class="promo clearfix promo1">
+                  <h2 class="h2">Вы уже были в Cочи</h2>
+                  <p>и знаете, каким этот город был всего несколько лет назад. Сегодня мы предлагаем взглянуть на НОВЫЙ СОЧИ - и поразиться тем изменениям, которые в нем произошли благодаря подготовке к Олимпийским играм 2014г.</p>
+                </div>
+                <div class="promo promo2">
+                  <h2 class="h2">Вы впервые в Cочи</h2>
+                  <p>и хотите провести здесь яркий и насыщенный отпуск.<br>Уверяем, что вы будете под впечатлением от увиденного, а фотографии, которые вы привезёте из этой поездки будут долго напоминать об этом городе.</p>
+                </div>
+                <div class="promo promo3">
+                  <h2 class="h2">Вы любите отдыхать за границей</h2>
+                  <p>а в этом году решили посетить Сочи!<br>Вы будете поражены уникальностью и красотой этого места и сделаете всё, чтобы вернуться сюда снова.<br>И не только летом!</p>
+                </div>  
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section4">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <h2 class="h2">20 мест, которые ты посетишь завтра на экскурсии &#171;ВЕСЬ СОЧИ за 1 ДЕНЬ&#187;:</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section5">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered pt50">
+              <div class="promo">
+                <div class="counter">1</div>
+                <p class="advantage">Самый высокий мост в России &#151; высота около 100 метров!</p>
+              </div>
+              <div class="promo">
+                <div class="counter">2</div>
+                <p class="advantage">Завод кубанских вин и коньяков<br>(с дегустацией)</p>
+              </div>
+              <div class="promo">
+                <div class="counter">3</div>
+                <p class="advantage">Башня на вершине горы Ахун 663м над уровнем моря (панорамный вид на море от Дагомыса до Пицунды и Кавказские горные вершины)</p>
+              </div>
+          </div>
+          <div class="col-md-12 centered pt25">
+              <div class="promo">
+                <div class="counter">4</div>
+                <p class="advantage">Музей истории краснодарского чая (с дегустацией)</p>
+              </div>
+              <div class="promo">
+                <div class="counter">5</div>
+                <p class="advantage">Музей ретро-автомобилей времён СССР</p>
+              </div>
+              <div class="promo">
+                <div class="counter">6</div>
+                <p class="advantage">Бальнеологический курорт Мацеста (с пользованием сероводородными источниками)</p>
+              </div>
+          </div>
+          <div class="col-md-12 centered">
+              <div class="viewall">Посмотреть все</div>
+              <div class="register">Запишись на экскурсию</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<div class="container-fluid section6">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <div class="jumbotron">
+                <h1 class="h1">В экскурсионное обслуживание входит</h1>
+              </div>
+              <div class="promoblock clearfix">
+                <div class="promo promo1"></div>
+                <div class="promo promo2"></div>
+                <div class="promo promo3"></div>
+                <div class="promo promo4"></div>  
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid section7">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <div class="h1">Почему стоит выбрать <span class="upper">путешествия с Михаилом</span></div>
+              <div class="promoblock clearfix">
+                <div class="promo__item">
+                  <div class="promo__title">c 2004</div>
+                  <div class="promo__text">года на рынке туристических услуг города-курорта Сочи</div>
+                </div>
+                <div class="promo__item">
+                  <div class="promo__title">33550</div>
+                  <div class="promo__text">Человек воспользовались услугами нашей компании за прошлый год</div>
+                </div>
+                <div class="promo__item">
+                  <div class="promo__title">25</div>
+                  <div class="promo__text">Туристических направлений по Сочи и Абхазии</div>
+                </div>
+              </div>
+              <div class="promoblock clearfix pt55">
+                <div class="promo__item">
+                  <div class="promo__title">10</div>
+                  <div class="promo__text">Фирменных автобусов с&nbsp;кондиционером и&nbsp;телевизором</div>
+                </div>
+                <div class="promo__item">
+                  <div class="promo__title">52</div>
+                  <div class="promo__text">Постоянных сотрудника в&nbsp;компании</div>
+                </div>
+                <div class="promo__item">
+                  <div class="promo__title">10</div>
+                  <div class="promo__text">Постоянных ГИДов, прошедших обучение и&nbsp;аттестацию внутри компании</div>
+                </div>
+              </div>
+              <div class="register">Запишись на экскурсию</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid section8">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <div class="jumbotron">
+                <h1 class="h1">Кто такой Михаил?</h1>
+              </div>
+              <div class="whois">
+                <div class="contacts">
+                  <div class="contacts__photo"></div>
+                  <div class="contacts__phone">8 (918) 101-70-21</div>
+                  <div class="contacts__links">
+                    <div class="social link__skype"></div>
+                    <div class="social link__vk"></div>
+                    <div class="social link__email"></div>
+                  </div>
+                </div>
+                <div class="description">
+                  <h2 class="h2">Михаил Винюков</h2>
+                  <div class="subtitle">основатель и генеральный директор компании</div>
+                  <ul class="medals">
+                    <li class="item">C 2004 года занимается туристическим бизнесом</li>
+                    <li class="item">Владелец транспортной компании</li>
+                    <li class="item">Учился и поддерживает контакты в США, Гана</li>
+                  </ul>
+                  <div class="message">Обращение Генерального Директора:</div>
+                  <div class="message__subtitle">&#171;Если у вас вдруг возникли какие-то претензии к нашему севису или работнику, вы можете обратиться непосредственно ко мне, и тогда ваш вопрос будет решён лично мной!&#187;</div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid section9">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+            <div class="h2">Отзывы наших клиентов</div>
+            <div class="review">
+              <div class="client">
+                <div class="client__photo"><img src="../images/client_photo.png" alt="Татьяна"></div>
+                <div class="client__name">Татьяна</div>
+                <div class="review__title">"Никогда ещё так увлекательно не путешествовали!"</div>
+                <div class="review__text">
+                  <p>Были в Лазаревском 12 дней в конце июля. За это время посетили 2 экскурсии с данной фирмой: Сочи + Олимпийский парк и 33 водопада с вечерним шоу. Хочется сказать огромное спасибо менеджеру Надежде Викторовне, экскурсоводам Ирине и Людмиле, водителям Артаку и Сахо. Все они &#151; настоящие профессионалы своего дела, во всем чувствуется их внимание и хорошее отношение к туристам. Содержание обеих экскурсий оказалось точно таким, какое было обозначено в маршруте, и сопровождалось интереснейшими рассказами гидов. Все очень понравилось, в следующий раз планируем посетить и другие экскурсии, выберем именно &#171;Путешествие с Михаилом&#187;.</p>
+                  <p>Пара небольших минусов, которые слегка подпортили настроение, но в целом на поездках не отразились:</p>
+                  <p>1) Высокие цены в кафе, далеко не для каждого кошелька. Понимаю, что от вас это никак не зависит, но перед поездкой нужно бы предупреждать об этом туристов или советовать брать с собой еду.</p>
+                  <p>2) Столкнулись с резким отношением к клиентам менеджера по имени Любовь. Узнав, что мы заказали экскурсию у другого менеджера, она отказалась ответить на элементарный вопрос (о выборе одежды на экскурсию на водопады), высказав нам свое недовольство и обиду.</p>
+                  <p>Во всем остальном &#151; все здорово! Никогда ещё так увлекательно не путешествовали!</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid section10">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 centered">
+              <div class="register">Заказать другую экскурсию</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--   <header>
+
+    <div class="container">
+      <div class="row">xxx</div>
+    </div>    
+  </header>
+  <main>
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript">
+    jQuery(function(){
+      
+    });
+  </script>
+ -->  
+<div class="layout_full"></div>
+ </body>
+</html>
