@@ -105,7 +105,7 @@ $(document).on('ready', function() {
 
     var formData = $("#form__callback").serialize()
     $.ajax({
-      url: "//formspree.io/hichnik@gmail.com", 
+      url: "//formspree.io/info@po-sochi.ru", 
       method: "POST",
       data: formData,
       dataType: "json"
