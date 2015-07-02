@@ -100,12 +100,16 @@ $(document).on('ready', function() {
   //           showPopup($('.'+popup_class));
   //   });
   // }
+  function isPositiveInt(n){
+    return Number(n)===n && n%1===0 && n > 0;
+  }
+
 
   $('.button__callback').on('click',function() {
 
     var formData = $("#form__callback").serialize()
     $.ajax({
-      url: "//formspree.io/info@po-sochi.ru", 
+      url: "//formspree.io/hichnik@gmail.com", 
       method: "POST",
       data: formData,
       dataType: "json"
@@ -127,6 +131,21 @@ $(document).on('ready', function() {
 
   })
   
+  $('.popup__quantity').on('keyup', function(){
+    
+    var value = parseInt($('.popup__quantity').val(),10)
+    
+    if ( isPositiveInt(value) ) {
+      
+      var nowSum = 799 * value
+      var laterSum = 999 * value
+      $(".sum__paynow").text( nowSum )
+      $(".sum__paylater").text( laterSum )
+      // console.log( value )
+    
+    } 
+    
+  })
 
 // Funny client Placement ... :-)
   updateFreePlaces()
