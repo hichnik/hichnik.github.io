@@ -1,4 +1,4 @@
- DEVELOPMENT ONLY  - BEGIN */
+ /* DEVELOPMENT ONLY  - BEGIN */
 body {
   position: relative;  
 }
@@ -49,7 +49,23 @@ display: none;
 
 /* DEVELOPMENT ONLY - END */
 
+/* BUGFIXES */
+
+.container-fluid {
+  min-width: 980px;
+  /* as we use static child container - ".container "*/
+}
+
+.mfp-bg {
+  min-width: 980px;
+}
+
+/* BUGFIXES */
+
 /* Variable classes */
+
+
+
 
 .magenta {
   color: #e12544;
