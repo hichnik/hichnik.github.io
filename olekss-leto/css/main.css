@@ -56,9 +56,12 @@ display: none;
   /* as we use static child container - ".container "*/
 }
 
-.mfp-bg {
+.mfp-bg, 
+.mfp-content {
   min-width: 980px;
 }
+
+
 
 /* BUGFIXES */
 
