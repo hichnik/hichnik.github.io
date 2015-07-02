@@ -61,7 +61,10 @@ display: none;
   min-width: 980px;
 }
 
-
+.bx-wrapper .bx-controls-direction a {
+   z-index: 100;
+   /*  9999 is fun but buggy with mfp popups */
+}
 
 /* BUGFIXES */
 
