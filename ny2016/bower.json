@@ -1,0 +1,38 @@
+{
+  "name": "game",
+  "version": "0.0.0",
+  "authors": [
+    "Iurii Didkovskyi <hichnik@gmail.com>"
+  ],
+  "description": "Game for 2016 new year",
+  "main": "app.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "game",
+    "new",
+    "year"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "particles.js": "~2.0.0",
+    "letteringjs": "~0.7.0"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3",
+    "particles.js": "~2.0.0",
+    "letteringjs": "~0.7.0"
+  }
+}

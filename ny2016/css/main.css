@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: #ccc;
+    height: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom right, #4cddff, #3b9aca 10%, #2d6ca5 20%, #2a5291 27%, #283d81 35%, #222654 50%, #1e1635 63%, #0c0010 93%, #000);
+    background: -o-linear-gradient(bottom right, #4cddff, #3b9aca 10%, #2d6ca5 20%, #2a5291 27%, #283d81 35%, #222654 50%, #1e1635 63%, #0c0010 93%, #000);
+    background: linear-gradient(to top left, #4cddff, #3b9aca 10%, #2d6ca5 20%, #2a5291 27%, #283d81 35%, #222654 50%, #1e1635 63%, #0c0010 93%, #000);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.section__main {
+    background-color: #254250;
+    background-image: -webkit-linear-gradient(top left, #041722, #173f56, #417685);
+    background-image: -o-linear-gradient(top left, #041722, #173f56, #417685);
+    background-image: linear-gradient(to bottom right, #041722, #173f56, #417685);
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+}
