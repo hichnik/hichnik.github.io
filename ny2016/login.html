@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <style type="text/css"></style>
+  </head>
+  <body ng-app>
+  <div id="login_button" onclick="VK.Auth.login(authInfo);"></div>
+    <p>Let the game begin!</p>
+  </body>
+  <script type="text/javascript"></script>
+
+  <div id="vk_api_transport"></div>
+<script type="text/javascript">
+  window.vkAsyncInit = function() {
+    VK.init({
+      apiId: '5023805'
+    });
+
+  VK.Auth.getLoginStatus(authInfo);
+  VK.UI.button('login_button');
+
+
+  };
+
+  function authInfo(response) {
+    if (response.session) {
+      console.log('user: ' + response.session.mid);
+    } else {
+      console.log('not authentificated');
+    }
+  }
+
+
+  setTimeout(function() {
+    var el = document.createElement("script");
+    el.type = "text/javascript";
+    el.src = "//vk.com/js/api/openapi.js";
+    el.async = true;
+    document.getElementById("vk_api_transport").appendChild(el);
+  }, 0);
+</script>
+</html>
