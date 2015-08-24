@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ProximaNovaExCn-Regular';
+  src: url('ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),  url('ProximaNovaExCn-Regular.otf')  format('opentype'),
+	     url('ProximaNovaExCn-Regular.woff') format('woff'), url('ProximaNovaExCn-Regular.ttf')  format('truetype'), url('ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
