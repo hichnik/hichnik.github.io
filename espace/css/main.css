@@ -68,6 +68,16 @@ opacity: .2;
 .nav__image {
   padding: 25px 0;
 }
+/* TODO: image replacement technique 
+
+.nav__image {
+  width: XXXpx; height: XXXx;
+  background: url("images/espace-logo");
+  text-indent: -9999px;
+}
+
+*/
+
 
 /* Override a style for from solar.css */
 a {opacity: 1}
