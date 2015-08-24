@@ -12,11 +12,11 @@ opacity: .2;
 
 @font-face {
   font-family: 'ProximaNovaExCn-Regular';
-  src:  url('/fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/ProximaNovaExCn-Regular.otf')  format('opentype'),
-        url('/fonts/ProximaNovaExCn-Regular.woff') format('woff'),
-        url('/fonts/ProximaNovaExCn-Regular.ttf')  format('truetype'),
-        url('/fonts/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
+  src:  url('../fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaExCn-Regular.otf')  format('opentype'),
+        url('../fonts/ProximaNovaExCn-Regular.woff') format('woff'),
+        url('../fonts/ProximaNovaExCn-Regular.ttf')  format('truetype'),
+        url('../fonts/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
