@@ -1,0 +1,273 @@
+    * {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 1.3;
+    color: #222;
+    display: inline-block;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    margin-top: 50px;
+}
+
+cite {
+    margin: 20px 0;
+    padding: 20px 30px;
+    display: block;
+    background-color: #eee;
+    width: 50%;
+    white-space: pre;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1280px;
+    max-width: 1280px;
+    padding: 20px 0;
+}
+
+.screen {
+    /*height: 100vh;*/
+    /* todo  make js version of height for
+  old browsers and resize  event for resizing */
+    padding-bottom: 25%;
+    /*margin-bottom: 20%;*/
+}
+
+@media only screen and (max-width: 1300px) {
+    .wrapper {
+        width: 960px;
+        max-width: 960px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    cite {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .screen {
+        text-align: center;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    p {
+        text-align: left
+    }
+    cite {
+        width: 100%;
+        padding: 20px 10%;
+        text-align: left;
+    }
+
+    .block-flex  {
+      flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .screen {
+        text-align: center;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: left;
+    }
+}
+
+.screen3 .block {
+  width: 100%;
+  background-color: #ccc;
+  padding: 5%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.screen3 .block__item {
+  background-color: #efefef;
+  display: inline-block;  
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+.screen3 .block-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ccc;
+  padding: 5%;
+  margin-bottom: 20px;
+}
+
+.screen4 .block__item {
+  padding: 40px 30px;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.screen4 .block-lh .block__item {
+  line-height: 50px;
+  white-space: no-wrap;
+}
+
+.block-table {
+  display: table;
+}
+.block__cell {
+  background-color: #ccc;
+  padding: 50px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.block-flexvert {
+  display: flex;
+  background-color: #ccc;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 30%;
+  height: 300px;
+  
+}
+
+.block-flexvert p {
+  margin: 0;
+}
+
+.block-parent1 {
+  position: relative;
+  height: 300px;
+  background-color: #ccc;
+}
+
+.block-child1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  background-color: #eee; 
+  
+  width: 150px;
+  height: 150px;
+  
+  margin-top: -75px;
+  margin-left: -75px;
+}
+
+.block-parent2 {
+  height: 201px;
+  background-color: #ddd;
+  margin-top: 20px;
+  position: relative;
+}
+
+.block-child2 {
+  position: absolute;
+  width: 90%;
+  
+  top: 50%;
+  left: 50%;
+  background-color: #FFF;
+  height: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+  padding: 0 20px;
+}
+
+.block-parent3 {
+  background-color: #eee;
+  padding: 20px;
+  height: 150px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block-child3 {
+  padding: 20px;
+  background-color: #cdc;
+}
+.block-child3 p {
+  margin: 0;
+}
+
+.block-parent4 {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-color: #ccc;
+}
+
+.block-child4 {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  padding: 10px;
+  
+  top: 50%;
+  left: 50%;
+  
+  margin: -40px 0 0 -70px;
+  background-color: #bbb;
+  
+
+}
+
+.block-parent5 {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color: #ddd;
+  }
+
+.block-child5 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  margin: auto;
+  background-color: #abc;
+}

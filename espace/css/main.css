@@ -1,15 +1,3 @@
-/*
-.mockup {
-position: absolute;
-top: 0;  
-left: 0;
-width: 100%;
-height: 100%;
-background: url('/images/mockup.png') top center no-repeat;
-opacity: .2;
-} */
-/* /dev only */
-
 @font-face {
   font-family: 'ProximaNovaExCn-Regular';
   src:  url('../fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'),
@@ -215,3 +203,22 @@ body {
     margin-top: 25px;
   }
 }
+
+/* dev only
+.mockup {
+position: absolute;
+top: 0;  
+left: 0;
+width: 100%;
+height: 100%;
+background: url('/images/mockup.png') top center no-repeat;
+opacity: .2;
+} */
+
+/* To clear all content 
+.wrapper {
+  display: none !important;
+}
+*/
+
+/* /dev only */

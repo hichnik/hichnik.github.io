@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="center.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="screen">
+        <h1>По горизонтали</h1>
+        <p>является ли элемент строчным (inline)</p>
+        <p>Строчные элементы внутри родительского можно центрировать с помощью <b>text-align: center</b></p>
+        <cite>
+.parent-container {
+  text-align: center;
+}
+        </cite>
+      </section>
+      <section class="screen">
+        <h1>Блочный элемент</h1>
+        <p>Блочный элемент можно центрировать, указав для margin значение <b>auto</b></p>
+      <cite>
+.container {
+  margin: auto;
+}
+      </cite>
+
+      </section>
+      <section class="screen screen3">
+        <h1>Несколько блочных элементов</h1>
+        <p>Несколько блочных элементов размещенных в ряд центрируются с помощью display: inline-block</p>
+  <div class="block">
+  <div class="block__item">Далеко-далеко за словесными горами в стране.</div>
+  <div class="block__item">Далеко-далеко за словесными горами в стране, гласных и согласных живут.</div>
+  <div class="block__item">Далеко-далеко за словесными горами в стране.</div>
+  </div>
+  
+  <div class="block-flex">
+    <div class="block__item">Далеко-далеко за словесными горами в стране.</div>
+    <div class="block__item">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большой, заглавных.</div>
+    <div class="block__item">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные.</div>
+  </div>
+      </section>
+      <section class="screen screen4">
+        <h1>По вертикали</h1>
+        <p>Если элемент помещается в одну строку - ставим padding</p>
+        <cite>
+          .element {
+            padding: 40px 20px;
+          }
+        </cite>
+      <div class="block">
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+      </div>
+        <p>Либо же ставим line-height</p>
+        <cite>
+          .element {
+            line-height: 40px;
+          }
+        </cite>
+      <div class="block block-lh">
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+        <div class="block__item">Lorem</div>
+      </div>
+  
+  <p>Или же центрировать блок как таблицу</p>
+  <div class="block-table">
+    <div class="block__cell">Lorem</div>
+  </div>
+
+  <p>Используем flex для вертикального центрирования</p>
+  <cite>
+    .flex-center-vertically {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 300px;
+    }
+  </cite>
+<div class="block-flexvert">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, culpa.</p>
+</div>
+      </section>
+    
+  
+<section class="screen screen5">
+  <h1>По вертикали при помощи position</h1>
+  <p>Способ 1: Если известна высота блока</p>
+  <cite>
+    .parent {position: relative}
+    .child {
+      position: absolute;
+      top: 50%;
+      
+      height: 100px;
+      margin-top: -50px;
+    }
+  </cite>
+  <div class="block-parent1">
+    <div class="block-child1">
+      <p>lorem</p>  
+    </div>
+  </div>
+  <p>Способ2: указав способ трансформации <b>trasform</b>: translateX translateY (-50%)</p>
+  <cite>
+    .parent {
+      position: relative;
+    }
+    .child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  </cite>
+  <div class="block-parent2">
+    <div class="block-child2">lorem</div>
+  </div>
+<cite>
+  
+</cite>
+<div class="block-parent3">
+  <div class="block-child3">
+    <p>lorem</p>
+  </div>
+</div>
+
+<p>Если у блока фиксированная ширина и высота, то можно делать с помощью маржина</p>
+<cite>
+  .parent { position: relative}
+  .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding 20px:
+    width: 200px;
+    height: 50px;
+
+    margin: -45px 0 0 -120px;
+  }
+</cite> 
+  
+<div class="block-parent4">
+  <div class="block-child4">lorem</div>
+</div>
+А ещё можно центрировать элементы указав размер и позицию <b>top left right bottom в 0 и margin: auto</b>
+<cite>
+.parent { position:relative}
+.child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}  
+</cite>
+
+<div class="block-parent5">
+  <div class="block-child5">lorem</div>
+</div>
+
+</section>
+</div>
+  </body>
+  <script type="text/javascript"></script>
+</html>
