@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=1024"/>
+<title>3D-вращение</title>
+<meta name='robots' content='noindex,follow'/>
+<link rel='stylesheet' id='cvc-style-css' href='css/style.css' type='text/css' media='all'/>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+</head>
+<body>
+<div class="wrapper">
+<a href="#" data-target="#medoff-royal" data-toggle="pi-rotate"><img src="./img/medoff-royal.png"></a>
+<a href="#" data-target="#medoff-platinum" data-toggle="pi-rotate"><img src="./img/medoff-platinum.png"></a>
+</div>
+<div class="pi-rotate fade" id="medoff-royal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="pi-window">
+<div class="pi-preloader fade in active"><div class="pi-preloader-icon"></div></div>
+<div class="pi-image fade">
+<div class="pi-sprite" style="background-image: url('./img/sprite-medoff-royal.png'); width: 114px; height: 400px;"></div>
+</div>
+</div>
+<button type="button" class="pi-close">&times;</button>
+</div>
+<div class="pi-rotate fade" id="medoff-platinum" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="pi-window">
+<div class="pi-preloader fade in active"><div class="pi-preloader-icon"></div></div>
+<div class="pi-image fade">
+<div class="pi-sprite" style="background-image: url('./img/sprite-medoff-platinum.png'); width: 114px; height: 400px;"></div>
+</div>
+</div>
+<button type="button" class="pi-close">&times;</button>
+</div>
+<script type='text/javascript' src='js/transition.min.js'></script>
+<script type="text/javascript" src="js/pi-rotate.js"></script>
+</body>
+</html>

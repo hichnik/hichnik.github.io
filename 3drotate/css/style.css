@@ -1,0 +1,148 @@
+body {
+    background: #fff;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 200px 0;
+    width: 600px;
+}
+
+.wrapper a {
+    background: rgba(0, 0, 0, .3);
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 120px;
+}
+
+.wrapper a>img {
+    margin: 0 auto;
+    display: block;
+}
+
+.pi-rotate {
+    text-align: center;
+    background: #000;
+    background: rgba(0, 0, 0, .85);
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.pi-rotate.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -moz-transition: opacity .15s linear;
+    -ms-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.pi-rotate.fade.in {
+    opacity: 1;
+}
+
+.pi-rotate:after,
+.pi-rotate .pi-window {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pi-rotate:after {
+    content: '';
+    height: 100%;
+}
+
+.pi-rotate .pi-window {
+    text-align: left;
+    background: #fff;
+    padding: 25px;
+    width: 400px;
+    position: relative;
+}
+
+.pi-rotate .pi-preloader.fade,
+.pi-rotate .pi-image.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -moz-transition: opacity .15s linear;
+    -ms-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.pi-rotate .pi-preloader.fade.in,
+.pi-rotate .pi-image.fade.in {
+    opacity: 1;
+}
+
+.pi-rotate .pi-preloader {
+    display: none;
+}
+
+.pi-rotate .pi-preloader.active {
+    display: block;
+}
+
+@-webkit-keyframes preload-spinner {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -660px;
+    }
+}
+
+@keyframes preload-spinner {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -660px;
+    }
+}
+
+.pi-preloader-icon {
+    background: url('../img/sprite-preloader.jpg') no-repeat 0 0;
+    margin-top: -26px;
+    margin-left: -27px;
+    display: block;
+    width: 55px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation: preload-spinner 0.5s steps(12) infinite;
+    animation: preload-spinner 0.5s steps(12) infinite;
+}
+
+.pi-sprite {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+
+.pi-rotate .pi-close {
+    color: #fff;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow: visible;
+    outline: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
