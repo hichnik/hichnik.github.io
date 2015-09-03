@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bookblock.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.custom.css">
     <link rel="stylesheet" href="css/pageflip.css">
+    <script src="js/modernizr.custom.79639.js"></script>
   </head>
   <body>
 <div class="container" id="container">
@@ -65,7 +68,10 @@
                 </div>
             </div>
         </div>
-        <nav><a href="#" id="bb-nav-prev">Prev</a><a href="#" id="bb-nav-next">Next</a></nav>
+        <nav>
+          <span id="bb-nav-prev">&larr;</span>
+          <span id="bb-nav-next">&rarr;</span>
+        </nav>
         <span class="menu-button" id="tblcontents">Table of contents</span>
     </div>
     <!-- /bb-custom-wrapper -->
@@ -74,10 +80,9 @@
 
   </body>
   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="js/jquerypp.custom.js"></script>
   <script src="js/jquery.mousewheel.js"></script>
-  <script src="js/modernizr.custom.79639.js"></script>
   <script src="js/jquery.jscrollpane.min.js"></script>
+  <script src="js/jquerypp.custom.js"></script>
   <script src="js/jquery.bookblock.js"></script>
   <script src="js/pageflip.js"></script>
   <script>

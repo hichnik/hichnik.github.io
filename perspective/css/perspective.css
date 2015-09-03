@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-wrapper {
+  width: 100%;
+  min-height: 100%;
+  background: -ms-linear-gradient(right, #04a6c3 0%, #175685 100%);
+  background: -moz-linear-gradient(right, #04a6c3 0%, #175685 100%);
+  background: -o-linear-gradient(right, #04a6c3 0%, #175685 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, #04a6c3), color-stop(1, #175685));
+  background: -webkit-linear-gradient(right, #04a6c3 0%, #175685 100%);
+  background: linear-gradient(to left, #04a6c3 0%,#175685 100%); 
+}
+
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  
+  font-size: 72px;
+  line-height: 1.2;
+
+  margin-bottom: 5%;
+  
+  color: #fff;
+  
+  position: relative;
+  display: inline-block;
+}
+
+.h1:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  width: 0;
+  height: 7px;
+  background: #FFF;
+  
+  transition: width 0.25s;
+ 
+}
+
+.h1:hover::after {
+  width: 99%;
+}
+
+.h1__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  
+  font-size: 24px;
+  line-height: 1.3;
+  
+  color: #efefef;
+  
+  width: 70%;
+  margin: 0 auto 5% auto;
+}
+
+.container {
+  padding: 5%;
+  text-align: center;
+}
+
+.whitelinks {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #eee;
+}
+
+.parent {
+  display: inline-block;
+  width: 40%;
+  margin: 5%;
+  float: left;
+}
+
+.h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  
+}
+
+.persp_examples:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.child {
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.parent.perspective {
+  perspective: 30em;
+}
+
+.parent.perspective .child {
+  transform: rotateX(50deg);
+  background: -webkit-linear-gradient(right, #fe8c00, #f83600);
+  background: -o-linear-gradient(right, #fe8c00, #f83600);
+  background: linear-gradient(to left, #fe8c00, #f83600);
+
+}
+
+.parent.transform .child {
+  transform: perspective(50em) rotateX(50deg);
+  background: -webkit-linear-gradient(right, #ddd6f3, #faaca8);
+  background: -o-linear-gradient(right, #ddd6f3, #faaca8);
+  background: linear-gradient(to left, #ddd6f3, #faaca8);
+}
+
+.per-wrapper {
+  perspective: 1000px;
+  /* IE10 Bug that i`ve found*/
+  overflow: hidden;
+}
+
+.per-wrapper .inner {
+  transform: rotateY(45deg);
+  /* HOVER OFF Transform - dont forget about it */
+  transition: transform 0.5s; 
+}
+
+.per-wrapper:hover .inner {
+  transform: rotateY(-45deg);
+  transition: transform 0.5s;
+}

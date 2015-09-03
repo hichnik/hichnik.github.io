@@ -14,11 +14,6 @@ h1,p {
   padding: 0;
 }
 
-header,
-section {
-  
-}
-
 .bg-wrapper {
   width: 100%;
   background: -ms-linear-gradient(right, #04a6c3 0%, #175685 100%);
