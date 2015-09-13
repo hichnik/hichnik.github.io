@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.gameCanvas {
+  display: block;
+}
+
+.development {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  padding: 10%;
+  height: 200px;
+  width: 70%;
+  background-color: rgba(255,255,255,.25);
+}

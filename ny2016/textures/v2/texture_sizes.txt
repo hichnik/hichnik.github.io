@@ -1,0 +1,12 @@
+images: /textures/v2
+base: top: 0, left: 0, width: 1920, height: 1080, file: base_ground_hd.png
+carousel: top: 420, left: 1430, width: 175, height: 184, file: carousel.png
+ctree: top: 276, left: 356, width: 236, height: 307, file: ctree.png
+eda: top: 622, left: 884, width: 290, height: 65, file: eda.png
+kitchen_light: top: 554, left: 830, width: 372, height: 120, file: kitchen_light.png
+
+video: /video
+train: top: 150, left: 1086, width: 788, height: 510, file: train_anim.mp4
+
+sequnces:
+

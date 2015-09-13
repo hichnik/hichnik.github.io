@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo with jQuery</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Demo project with jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">  -->
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:200,600,900&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/normalize.css/normalize.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation-phrases.css">
+    <style type="text/css">
+ 
+    .button {
+      vetical-align: middle;
+      height: 100%;
+    }
+
+    .button-play {
+      font-family: "Exo 2", "Roboto", sans-serif;
+      font-size: 60px;
+      line-height: 100px;
+      font-weight: 600;
+      border: 2px solid rgba(255,255,255,.9);
+      padding: 70px 15px 10px;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -125px;
+      margin-left: -125px;
+      
+      text-transform: uppercase;
+      text-shadow: 2px 0px 20px #ccc;
+      box-shadow: 0px 0px 50px #fff,
+      inset -5px -5px 55px rgba(0,0,0,1);
+       
+      background: url('images/buttons/button-play2.png');
+      z-index: 2;
+    }
+
+    .button-blink {
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      border-radius: 50%;
+      
+      -webkit-animation: blinkBg 3s infinite;
+          -moz-animation: blinkBg 3s infinite;
+            -o-animation: blinkBg 3s infinite;
+               animation: blinkBg 3s infinite; 
+    }
+
+    @keyframes blinkBg {
+      0% {
+        background: rgba(34, 139, 34,.2);
+      }
+      50% {
+        background: rgba(34, 139, 34,.5);
+      }
+
+      100% {
+        background: rgba(34, 139, 34,.2);
+      }
+
+    }
+
+    .button-blink:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      
+/*border: 1px solid #fff;      */
+      border-radius: 50%;
+      
+        -webkit-animation: sonarAnim 3s linear infinite;
+           -moz-animation: sonarAnim 3s linear infinite;
+             -o-animation: sonarAnim 3s linear infinite;
+                animation: sonarAnim 3s linear infinite;
+
+    }
+
+    @keyframes sonarAnim {
+      0% {
+        opacity: 1;
+        box-shadow: 0 0 1px #fff,
+      }
+      100% {
+        opacity: 0
+        -webkit-transform: scale(2);
+           -moz-transform: scale(2);
+            -ms-transform: scale(2);
+             -o-transform: scale(2);
+                transform: scale(2);
+      }
+    }
+
+
+    </style>
+  </head>
+  <body>
+<div class="wrapper">
+  <div id="particles-js"></div>
+
+  <div class="container">
+  <div class="phrases hide">
+    <h2>Створи свій</h2>
+    <h2>Новий рік</h2>
+    <h2>На софії</h2>
+    <h2>гра</h2>
+    <h2>що стане</h2>
+    <h2>реальністю</h2>
+  </div>
+   <div class="hide button button-play">
+      <div class="button-blink"></div>
+      <div class="button-text">Старт</div>    
+  </div>
+
+  </div>
+</div>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="libs/letteringjs/jquery.lettering.js"></script>
+  <script src="libs/particles.js/particles.min.js"></script>
+  <script type="text/javascript">
+    jQuery(function(){
+      $(document).on('ready', function() {
+        $(".phrases").removeClass("hide");
+        $(".phrases > h2").lettering('words').children("span").lettering(). children("span").lettering();
+      });
+
+      setTimeout(function(){
+        $(".button-play").removeClass("hide").fadeIn();
+       }, 33000);
+    // },30);
+
+    });
+
+    particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+      //console.log('callback - particles.js config loaded');
+    });
+  </script>
+  </body>
+</html>
