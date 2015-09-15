@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Калькулятор визначення індексу маси тіла (IMT)</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Відбіркова робота на UA Web Challenge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:600,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/default.css">
+  </head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <h1 class="h1">Калькулятор визначення індексу маси тіла (IMT)</h1>
+            <div class="inputParams">
+                <h2 class="h2">Вхідні параметри:</h2>
+                <form action="" method="get">
+                    <label for="personHeight">Зріст:</label>
+                    <input type="number" min="40" max="260" placeholder="180" name="personHeight" id="personHeight">
+                    <label for="personWeight">Вага:</label>
+                    <input type="number" min="20" max="300" placeholder="80" id="personWeight" name="personWeight">
+                    <div class="button calculateButton" id="calculateButton">Обчислити</div>
+                </form>
+                <div class="inputParams__errormsg" id="errorMessage">
+                    Введіть будь ласка коректні дані зросту та ваги
+                </div>
+            </div>
+            <div class="result" id="calculatedResult">
+                <div class="result__message" id="resultMessage">
+                  <h2 class="h2">Результат:</h2>
+                    <p class="result__description">Ваш індекс маси тіла: <span id="finalResult" class="result__finalresult">24</span></p>  
+                </div>
+                <table class="result__table">
+                    <tr class="result__headrow">
+                        <th class="result__head">Індекс маси тіла</th>
+                        <th class="result__head">Класифікація</th>
+                    </tr>
+                    <tr id="belowNormal" class="result__row">
+                        <td class="result__col">менше 18,5</td>
+                        <td class="result__col">Недостатня маса</td>
+                    </tr>
+                    <tr id="justNormal" class="result__row">
+                        <td class="result__col">18,5 &mdash; 24,9</td>
+                        <td class="result__col">Норма</td>
+                    </tr>
+                    <tr id="aboveNormal1" class="result__row">
+                        <td class="result__col">25,0 &mdash; 29,9</td>
+                        <td class="result__col">Передожиріння (гладкість)</td>
+                    </tr>
+                    <tr id="aboveNormal2" class="result__row">
+                        <td class="result__col">30,0 &mdash; 34,9</td>
+                        <td class="result__col">Ожиріння &#x2160; ступеня</td>
+                    </tr>
+                    <tr id="aboveNormal3" class="result__row">
+                        <td class="result__col">35,0 &mdash; 39,9</td>
+                        <td class="result__col">Ожиріння &#x2161; ступеня</td>
+                    </tr>
+                    <tr id="aboveNormal4" class="result__row">
+                        <td class="result__col">більше 40</td>
+                        <td class="result__col">Ожиріння &#x2162; ступеня</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+  <script src="js/calculator.js"></script>
+  <script type="text/javascript">
+    Calculator.init();
+  </script>
+</html>
