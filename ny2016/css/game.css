@@ -12,11 +12,25 @@ body {
 }
 
 .wrapper {
+  display: block;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  
+  background: -webkit-linear-gradient(right, #4b6cb7, #182848);
+  background: -o-linear-gradient(right, #4b6cb7, #182848);
+  background: linear-gradient(to left, #4b6cb7, #182848);
 }
 
 .gameCanvas {
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .development {
@@ -28,4 +42,11 @@ body {
   height: 200px;
   width: 70%;
   background-color: rgba(255,255,255,.25);
+}
+
+.rotated { 
+    transform:rotate(-90deg); 
+    -webkit-transform:rotate(-90deg); 
+    -moz-transform:rotate(-90deg); 
+    -o-transform:rotate(-90deg); 
 }
