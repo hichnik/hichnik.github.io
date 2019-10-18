@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 220" width="300" height="220" style="enable-background:new 0 0 300 220;" xml:space="preserve">
+<style type="text/css">
+	.icon{fill:#97999B; opacity: .4}
+	.text{font-family:Arial, Tahoma, Verdana;}
+	.text.big{fill:#53565A; font-size:18px;}
+	.text.small{fill:#97999B; font-size:12px;}
+</style>
+<path class="icon" d="M152.9,40c-12.1,0-22,9.9-22,22c0,7.3,3.8,14,9.2,17.8l-14.6,27.7l4.8,2.5l14.6-27.7c2.5,1,5.1,1.6,7.6,1.6
+	c12.1,0,22-9.9,22-22S165,40,152.9,40z M152.9,78.2c-8.9,0-16.2-7.3-16.2-16.2s7.3-16.2,16.2-16.2S169.1,53,169.1,62
+	S161.8,78.2,152.9,78.2z"/>
+<text transform="matrix(1 0 0 1 80 155)" class="text big">No avialable data</text>
+<text transform="matrix(1 0 0 1 72 185)" class="text small"></text>
+</svg>

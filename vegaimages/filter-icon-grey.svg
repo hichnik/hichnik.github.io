@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" width="24px" height="24px" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st1{fill:none;stroke:#97999B;stroke-width:1.8;stroke-miterlimit:10;}
+</style>
+<path class="st1" d="M22,2.6C21.8,2.2,21.5,2,21.1,2H2.9C2.5,2,2.3,2.2,2.1,2.6C1.9,2.9,2,3.3,2.3,3.6l7,7v6.9
+	c0,0.3,0.1,0.5,0.3,0.6l3.6,3.6c0.2,0.2,0.4,0.3,0.6,0.3c0.1,0,0.2,0,0.4-0.1c0.4-0.2,0.6-0.4,0.6-0.8V10.5l7-7
+	C22.1,3.3,22.1,2.9,22,2.6z"/>
+</svg>
